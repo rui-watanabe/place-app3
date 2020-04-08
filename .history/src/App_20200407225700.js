@@ -6,8 +6,8 @@ import NewPlace from './places/pages/NewPlace'
 
 const App = () => {
   return(
-    <Router>
-      <Switch>
+    <Switch>
+      <Router>
         <Route path="/" exact>
           <Users />
         </Route>
@@ -15,8 +15,8 @@ const App = () => {
           <NewPlace />
         </Route>
         <Redirect to="/" />
-      </Switch>
-    </Router>
+      </Router>
+    </Switch>
   )
   
 }
